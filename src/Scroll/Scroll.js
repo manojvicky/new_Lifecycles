@@ -49,16 +49,16 @@ class Scroll extends React.Component {
           {this.state.arr.map((i, index) => {
             if (index % 2 === 0) {
               return (
-                <div key={index} className="outerChat">
-                  <div className="triangle" />
-                  <div className="chat">{i}</div>
+                <div key={index} className="outerChatLeft">
+                  <div className="triangleLeft" />
+                  <div className="chatLeft">{i}</div>
                 </div>
               );
             } else {
               return (
-                <div key={index} className="outerChat">
-                  <div className="righttriangle" />
-                  <div className="chat rightchat">{i}</div>
+                <div key={index} className="outerChatRight">
+                  <div className="triangleRight" />
+                  <div className="chatRight">{i}</div>
                 </div>
               );
             }
